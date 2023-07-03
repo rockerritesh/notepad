@@ -1,40 +1,30 @@
+<!DOCTYPE html>
 <html>
 <head>
-    
-	<link rel='stylesheet' href='style.css'  />
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    
     <div class="main">
         <div class="main-container">
-    
             <div class="header">
-<input type="text" class="txtHeader" id="txtHeader" placeholder="Enter title here"/>
-&nbsp; 
+                <input type="text" class="txtHeader" id="txtHeader" placeholder="Enter title here" />
+            </div>
+            <div class="content">
+                <textarea class="txtContent" id="txtContent"></textarea>
+            </div>
+            <div class="options">
+                <center>
+                    <button onclick="downloadFile('txt')" class="btn btn-download">Download as Text</button>
+                    <button onclick="downloadFile('md')" class="btn btn-download">Download as Markdown</button>
+                    <button onclick="changeStyle('b')" class="btn1"><b>B</b></button>
+                    <button onclick="changeStyle('i')" class="btn1"><i>i</i></button>
+                    <button onclick="changeStyle('u')" class="btn1">u</button>
+                    <button onclick="changeStyle('n')" class="btn1">n</button>
+                </center>
+            </div>
         </div>
-
-        <div class="content">
-       <textarea  class="txtContent" id="txtContent"></textarea>
-        </div>
-     
-        <div class="options">
-            <center>
-            <button onclick="downloadFile()" class="btn btn-download">DOWNLOAD</button>
-            <button onclick="changeStyle('b')" class="btn1"><b>B</b></button>
-            <button onclick="changeStyle('i')" class="btn1"><i>i</i></button>
-            <button onclick="changeStyle('u')" class="btn1">u</button>
-            <button onclick="changeStyle('n')" class="btn1">n</button>
-            </center>
-        </div>
-    
-    </div>
     </div>
 
-</div>
-
+    <script src="script.js"></script>
 </body>
-
-<script src='script.js' ></script>
-
 </html>
